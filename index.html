@@ -1,614 +1,491 @@
-<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Creative Green Landscaping | Premier Australian Landscape Designer</title>
-<meta content="Creative Green Landscaping crafts bespoke architectural gardens, sustainable outdoor sanctuaries, and luxury residential landscapes across Australia." name="description">
-<!-- Tailwind CSS CDN with Forms & Container Queries -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<!-- Tailwind Configuration -->
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              dark: '#111d17',
-              forest: '#1b382b',
-              moss: '#2d6a4f',
-              lime: '#a3e635',
-              surface: '#fbfbf9',
-              card: '#f4f4ef',
-              cream: '#f5f3ee',
-              border: '#e6e4dc'
-            }
-          },
-          fontFamily: {
-            serif: ['Playfair Display', 'Georgia', 'serif'],
-            sans: ['Plus Jakarta Sans', 'system-ui', '-apple-system', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-<style data-purpose="typography">
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #fbfbf9;
-      color: #1a221e;
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-    }
-    .font-serif-luxury {
-      font-family: 'Playfair Display', Georgia, serif;
-    }
-  </style>
-<style data-purpose="header-transitions">
-    #top-nav {
-      transition: padding 0.35s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.35s ease, box-shadow 0.35s ease;
-    }
-    #top-nav.scrolled {
-      padding-top: 0.65rem;
-      padding-bottom: 0.65rem;
-      background-color: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      box-shadow: 0 4px 24px -2px rgba(17, 29, 23, 0.06);
-    }
-    #hero-bg {
-      will-change: transform;
-      transition: transform 0.1s linear;
-    }
-  </style>
-</head>
-<body class="bg-brand-surface text-brand-dark overflow-x-hidden selection:bg-brand-lime selection:text-brand-dark">
-<!-- BEGIN: MainHeader -->
-<header class="fixed top-0 left-0 right-0 z-50 py-5 transition-all duration-300" data-purpose="sticky-navigation" id="top-nav">
-<div class="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between">
-<!-- Company Brand Logo -->
-<a aria-label="Creative Green Landscaping Home" class="flex items-center gap-3 group focus:outline-none" href="#hero">
-<img alt="Creative Green Landscaping Logo" class="h-9 md:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]" src="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 460 80' fill='none'&gt;&lt;g&gt;&lt;rect x='8' y='10' width='60' height='60' rx='16' fill='%23132a21'/&gt;&lt;path d='M38 18C38 18 52 26 52 42C52 51 46 58 38 60C30 58 24 51 24 42C24 26 38 18 38 18Z' fill='%23a3e635' fill-opacity='0.9'/&gt;&lt;path d='M38 22V56M30 38L38 46L46 38' stroke='%23132a21' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/&gt;&lt;circle cx='50' cy='20' r='4.5' fill='%23f59e0b'/&gt;&lt;/g&gt;&lt;text x='82' y='38' font-family='sans-serif' font-size='21' font-weight='900' letter-spacing='-0.5' fill='%23111c15'&gt;CREATIVE GREEN&lt;/text&gt;&lt;text x='82' y='56' font-family='sans-serif' font-size='11' font-weight='700' letter-spacing='2.6' fill='%232d6a4f'&gt;LANDSCAPING • LANDSCAPE DESIGNER&lt;/text&gt;&lt;/svg&gt;">
-</a>
-<!-- Navigation Desktop Links -->
-<nav class="hidden md:flex items-center gap-8 lg:gap-10 text-[13px] tracking-wider uppercase font-semibold text-brand-dark/80" data-purpose="desktop-nav-menu">
-<a class="hover:text-brand-moss transition-colors" href="#about">About Us</a>
-<a class="hover:text-brand-moss transition-colors" href="#services">Services</a>
-<a class="hover:text-brand-moss transition-colors" href="#work">Work</a>
-<a class="hover:text-brand-moss transition-colors" href="#process">Process</a>
-<a class="hover:text-brand-moss transition-colors" href="#reviews">Testimonial</a>
-<a class="hover:text-brand-moss transition-colors" href="#contact">Contact</a>
-</nav>
-<!-- Action Button & Phone CTA -->
-<div class="flex items-center gap-3 sm:gap-5">
-<a class="hidden sm:inline-flex items-center gap-2 text-xs font-bold tracking-wider text-brand-dark hover:text-brand-moss transition-colors" data-purpose="direct-phone-call" href="tel:+61406302649">
-<svg class="w-4 h-4 text-brand-moss" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-<span class="">+61 406 302 649</span>
-</a>
-<a class="inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-brand-dark text-white hover:bg-brand-forest transition-all shadow-sm hover:shadow" href="#contact">
-          Book Consult
-        </a>
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Creative Green Landscaping</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Sora:wght@500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-on-surface":"#ebf3eb","tertiary":"#002910","on-surface-variant":"#424842","inverse-surface":"#2b322d","secondary-fixed-dim":"#91db2a","surface-variant":"#dde4dd","on-primary-container":"#83ab8d","on-tertiary":"#ffffff","surface-dim":"#d4dcd5","tertiary-fixed-dim":"#4de082","surface-container-lowest":"#ffffff","primary-fixed-dim":"#a7d0b1","on-error":"#ffffff","on-primary":"#ffffff","surface-container-low":"#eef6ee","error-container":"#ffdad6","inverse-primary":"#a7d0b1","error":"#ba1a1a","on-tertiary-container":"#08b960","outline":"#727972","tertiary-container":"#00411d","on-primary-fixed":"#00210f","on-background":"#161d19","on-primary-fixed-variant":"#294e36","secondary-fixed":"#acf847","surface-tint":"#41664c","on-surface":"#161d19","on-secondary-fixed-variant":"#304f00","surface-bright":"#f4fbf4","tertiary-fixed":"#6dfe9c","secondary":"#416900","primary-fixed":"#c3edcc","on-error-container":"#93000a","primary":"#022914","outline-variant":"#c1c8c0","surface-container":"#e8f0e9","secondary-container":"#acf847","surface-container-high":"#e2eae3","surface-container-highest":"#dde4dd","on-secondary-fixed":"#102000","surface":"#f4fbf4","on-tertiary-fixed":"#00210c","background":"#f4fbf4","on-secondary":"#ffffff","primary-container":"#1a3f28","on-secondary-container":"#457000","on-tertiary-fixed-variant":"#005227"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"2rem","space-xs":"0.5rem","margin":"4rem","margin-mobile":"1.25rem","margin-tablet":"2rem","space-md":"1.25rem","space-sm":"0.75rem","space-xl":"3.5rem","gutter-mobile":"1rem","space-lg":"2rem"},"fontFamily":{"display-hero":["Sora"],"label-md":["Sora"],"headline-lg-mobile":["Sora"],"headline-md":["Sora"],"label-lg":["Sora"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Sora"],"headline-sm":["Sora"],"label-sm":["Sora"],"body-md":["Plus Jakarta Sans"],"display-hero-mobile":["Sora"],"body-lg":["Plus Jakarta Sans"]},"fontSize":{"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><div class="fixed top-0 left-0 h-[2px] w-0 bg-primary z-50 transition-[width] duration-75 ease-out" id="scroll-progress-bar"></div><header class="fixed top-4 left-0 right-0 z-40 px-margin-mobile md:px-margin-tablet lg:px-margin pointer-events-none transition-transform duration-300 ease-in-out" id="floating-header"><div class="pointer-events-auto mx-auto max-w-[760px] h-16 rounded-full bg-surface-container-lowest/80 backdrop-blur-xl border border-outline-variant/30 shadow-[0_12px_32px_-4px_rgba(13,20,16,0.06),0_4px_12px_-2px_rgba(26,63,40,0.03)] px-3 sm:px-4 flex items-center justify-between gap-2 sm:gap-4"><a aria-label="Creative Green Landscaping" class="flex items-center gap-2 group flex-shrink-0" href="#"><img alt="Creative Green Landscaping Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WizdP8SfdTvZ1lSYPdZxHZgdVe2-Y10MxFiyOuQSgaFur4iqG8Bu-OJJQTdaCV-E4gpIHEMY53Sotk-Y3dcwF09BxCrHRHKY-JMsVQFfUeeF-acCv4c99Kvx5n4ccizIzIoUkUhn9yKZDXKz5V3FP0SGuGM6yOlEnQUu-TadcnCx-B8xFCMhKiaONTG3rTU59nLkic1Zd6O79tE-InjeoCBHAKfZDkutA1Sz9RBsejdw"><span class="hidden sm:inline font-headline-sm text-headline-sm text-primary tracking-tight">Creative Green</span></a><nav class="hidden md:flex items-center gap-1 text-on-surface-variant" data-active-classes="bg-primary-container text-on-primary font-label-md text-label-md rounded-full px-3 py-1.5"><a aria-current="page" class="transition-all bg-primary-container text-on-primary font-label-md text-label-md rounded-full px-3 py-1.5" data-path="overview" href="#overview">Overview</a><a class="px-2.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="philosophy" href="#about">Philosophy</a><a class="px-2.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="disciplines" href="#services">Disciplines</a><a class="px-2.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="showcase" href="#showcase">Showcase</a><a class="px-2.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="testimonials" href="#reviews">Testimonials</a><a class="px-2.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="contact" href="#contact">Contact</a></nav><div class="flex items-center gap-2 flex-shrink-0"><a class="inline-flex items-center gap-1.5 bg-primary hover:bg-primary-container text-on-primary px-3.5 py-2 rounded-full font-label-md text-label-md tracking-wider transition-colors shadow-sm" href="tel:+18005550199"><span class="uppercase">Call</span><span class="material-symbols-outlined text-[16px]">north_east</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO (#overview) -->
+<section class="relative w-full pt-10 pb-20 md:pt-16 md:pb-28 overflow-hidden" id="overview">
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col gap-12 lg:gap-16">
+<!-- Headline & Subtitle Area -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pt-4">
+<div class="max-w-3xl flex flex-col gap-6">
+<div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container border border-outline-variant/40 w-fit backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Landscape Architecture &amp; Craft</span>
 </div>
+<h1 class="font-display-hero text-display-hero tracking-tight text-primary leading-[1.1]">
+            Living craft sculpted into <span class="italic font-normal text-on-surface-variant">timeless</span> garden architecture.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Bespoke residential landscape design, artisanal botanical curation, and enduring outdoor living crafted for elevated modern residences.
+          </p>
 </div>
-</header>
-<!-- END: MainHeader -->
-<!-- BEGIN: HeroSection -->
-<section class="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden" data-purpose="hero-banner" id="hero">
-<div class="max-w-7xl mx-auto px-6 sm:px-8">
-<!-- Editorial Hero Header Copy -->
-<div class="max-w-3xl mb-10 md:mb-14">
-<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-forest/5 text-brand-moss text-[11px] font-bold tracking-widest uppercase mb-6">
-<span class="w-1.5 h-1.5 rounded-full bg-brand-moss"></span>
-          A Place Where Nature Thrives
-        </div>
-<h1 class="font-serif-luxury text-4xl sm:text-5xl lg:text-6xl text-brand-dark tracking-tight leading-[1.12] mb-6">
-          Turning outdoor dreams into reality
-        </h1>
-<p class="text-base sm:text-lg text-brand-dark/75 font-normal leading-relaxed max-w-2xl mb-8">
-          Whether it’s a tranquil courtyard garden or an expansive terraced coastal sanctuary, we create living spaces where nature can breathe, inspire, and flourish.
-        </p>
-<!-- CTA Buttons -->
-<div class="flex flex-wrap items-center gap-4 text-xs font-semibold tracking-wider uppercase">
-<a class="px-6 py-3.5 rounded-full bg-brand-dark text-white hover:bg-brand-forest transition-all duration-200" href="#contact">
-            Contact us
-          </a>
-<a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white border border-brand-border text-brand-dark hover:border-brand-dark transition-all duration-200" href="#work">
-<span class="">Our work</span>
-<svg class="w-3.5 h-3.5 rotate-[-45deg]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
+<!-- Call to Actions -->
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-4 lg:mb-2">
+<a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-secondary-container text-on-secondary-container font-label-lg text-label-lg uppercase tracking-wide hover:brightness-105 transition-all shadow-[0_12px_32px_-4px_rgba(13,20,16,0.12)]" href="#contact">
+<span class="">Request Consultation</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-2xl bg-surface-container-high text-primary font-label-lg text-label-lg uppercase tracking-wide hover:bg-surface-variant transition-all" href="#showcase">
+<span class="">Explore Portfolio</span>
 </a>
 </div>
 </div>
-<!-- 4K Hero Visual Architecture Showcase -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center"><div class="lg:col-span-7"><div class="relative w-full rounded-2xl md:rounded-3xl overflow-hidden shadow-xl border border-brand-border/60 aspect-[16/10] max-h-[500px]"><img alt="Luxury Australian residential landscape design with terraced lawn, reflection pond, and native eucalyptus" class="w-full h-full object-cover object-center transform scale-105" id="hero-bg" loading="eager" src="https://lh3.googleusercontent.com/aida/AEtjO1Wn-WcjJwCTGAQq02Mzu25N5b0wJ0xOkMJ19CCxJ-0-cylEyd_p6SeXdz7HII4V5_6hZq6XF0F7ivZRSJrOLRb5tUK7cmKNXkJIZRYg2a1vyGaP9LBGz9UiMOswoLW94LNiD3gcY5lj52ys-ehOeCciRwEVzrAscds6ImiTVYbUeJxB-T6U1LnkO1CNJsXnCNv7h-m2DtaKuu-0zsvzYJbPYZM67jo-37NM4QDsFIudZQ7yB8WMFT4-wqM"><div class="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-black/10 pointer-events-none"></div></div></div><div class="lg:col-span-5 flex flex-col justify-center lg:pl-2"><span class="text-[11px] font-bold tracking-widest text-brand-moss uppercase mb-3 block">CRAFTED WITH ARCHITECTURAL BALANCE</span><h2 class="font-serif-luxury text-2xl sm:text-3xl text-brand-dark mb-4 leading-snug">Living spaces designed to elevate your everyday sanctuary.</h2><p class="text-sm md:text-base text-brand-dark/70 font-normal leading-relaxed mb-6">By calibrating light, native Australian topography, and structural geometry, we craft outdoor environments that grow more captivating with every season.</p><ul class="space-y-3 mb-8 text-xs sm:text-sm text-brand-dark/80"><li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-brand-moss mt-2 flex-shrink-0"></span><span class="">Bespoke Australian stone masonry &amp; endemic botanical curation</span></li><li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-brand-moss mt-2 flex-shrink-0"></span><span class="">100% water-efficient microclimate engineering</span></li><li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-brand-moss mt-2 flex-shrink-0"></span><span class="">Seamless indoor-outdoor transitional living</span></li></ul><div><a class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-brand-dark hover:text-brand-moss transition-colors border-b border-brand-dark/40 hover:border-brand-moss pb-1" href="#work"><span class="">Explore Signature Projects</span><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a></div></div></div>
+<!-- Hero Visual Showcase -->
+<div class="relative w-full rounded-3xl overflow-hidden shadow-2xl bg-surface-container-high group">
+<div class="aspect-[16/9] md:aspect-[21/9] w-full relative">
+<img alt="Ultra-luxury modern landscape architecture at golden hour" class="w-full h-full object-cover object-center rounded-3xl group-hover:scale-[1.01] transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0RfOCjqGIvqkx7_CnXbOHfWaVrPRQ2dmLRmH_Okhb2FKMDtqnv9RJdTzn-wVgAnNvsSHXaaXUDeE84cp1O_td5J_NkaDF2KDKw3cv2Ckubw4YorJDjxsoyWklepg98lPvhz6Guc_N3xL3ASwwzoN7acccqOMhzLIOt5o1fiAFSZQEF65pCWOsIyrwdgsDWeyi8DQlEGh_67TFNLimCWfTbKe32rIe4h2GUFumoBj3">
+<!-- Subtle Gradient Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+<!-- Bottom Frosted Floating Card Metadata -->
+<div class="absolute bottom-6 left-6 right-6 md:left-10 md:right-10 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
+<div class="px-5 py-3.5 rounded-2xl bg-surface-container-lowest/85 backdrop-blur-xl border border-outline-variant/30 shadow-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px]">nature_people</span>
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Selected Commission</p>
+<p class="font-headline-sm text-headline-sm text-primary">Estate Botanical Grounds • 2026 Commission</p>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-3 px-4 py-2 rounded-xl bg-surface-container-lowest/70 backdrop-blur-md border border-outline-variant/20 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">wb_sunny</span>
+<span class="font-label-md text-label-md">Golden Hour Natural Illumination</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Strip / Architectural Metrics -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+<div class="flex items-center gap-4 p-6 rounded-2xl bg-surface-container-low border border-outline-variant/25">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">history_edu</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">15+ Years</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Horticultural Mastery &amp; Specimen Plantings</span>
+</div>
+</div>
+<div class="flex items-center gap-4 p-6 rounded-2xl bg-surface-container-low border border-outline-variant/25">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Certified Guild</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Master Artisans, Stonemasons &amp; Agronomists</span>
+</div>
+</div>
+<div class="flex items-center gap-4 p-6 rounded-2xl bg-surface-container-low border border-outline-variant/25">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">star</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">5.0 ★ Client Score</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">100% On-Time Precision &amp; White-Glove Care</span>
+</div>
+</div>
+</div>
 </div>
 </section>
-<!-- END: HeroSection -->
-<!-- BEGIN: ServicesSection -->
-<section class="py-20 md:py-32 bg-[#faf9f6] border-t border-brand-border/40" data-purpose="services-showcase" id="services">
-<div class="max-w-7xl mx-auto px-6 sm:px-8">
-<!-- Section Title & Intro -->
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-24 pb-8 border-b border-brand-border/60">
-<div>
-<span class="text-xs font-bold uppercase tracking-widest text-brand-moss block mb-3">Our Services</span>
-<h2 class="font-serif-luxury text-3xl sm:text-4xl text-brand-dark tracking-tight max-w-xl">
-            Discover how our bespoke landscape projects transform every space
+<!-- SECTION 2: PHILOSOPHY & ABOUT (#about) -->
+<section class="w-full py-24 bg-surface-container-low" id="about">
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col gap-16">
+<div class="flex flex-col lg:flex-row items-start justify-between gap-12">
+<div class="max-w-2xl flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest border border-outline-variant/30 w-fit">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Our Philosophy</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            We cultivate living environments that evolve with time.
           </h2>
-</div>
-<div class="mt-6 md:mt-0">
-<a class="text-xs font-bold uppercase tracking-widest text-brand-dark/70 hover:text-brand-dark border-b border-brand-dark pb-1 inline-flex items-center gap-2" href="#work">
-<span class="">View All Projects</span>
-<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</a>
-</div>
-</div>
-<!-- Service Item 1: Custom Garden Design -->
-<article class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-14 items-center mb-24 md:mb-32">
-<div class="lg:col-span-7 order-2 lg:order-1">
-<div class="overflow-hidden rounded-2xl shadow-lg border border-brand-border/60 aspect-[16/10]">
-<img alt="Custom Garden Design &amp; Master Landscape Architecture" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCghb_1ALoRjjdlVpNA5umjkWgtUWb2rLC_aGHXXVkYp0LoNLhfNpxCLIv8L7V4cDN9_OTgSwV-cl505o3l1JTfchwtSijEb_Q29VHtglGVLbJC4iFBfso0flhOjp9_aFEng9gb_z3fHoOZWAJHqGDhO-m4IHHBuKWI17rR7ChqbOKKnVsjdqCZk14Pm600L2xPdh586vuUy2bHWXTEuaQGk5c7UTrFUgVkeXdosk0V2H2jcZMdq2z9Ig">
-</div>
-</div>
-<div class="lg:col-span-5 order-1 lg:order-2 lg:pl-4">
-<span class="text-[11px] font-bold tracking-widest text-brand-moss uppercase mb-3 block">Custom Garden Design</span>
-<h3 class="font-serif-luxury text-2xl sm:text-3xl text-brand-dark mb-4 leading-snug">
-            Crafting Unique Outdoor Spaces
-          </h3>
-<p class="text-sm md:text-base text-brand-dark/70 font-normal leading-relaxed mb-6">
-            Our landscape architecture team works closely with you to create a personalized sanctuary that reflects your lifestyle, property topography, and local climate conditions.
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            At Creative Green Landscaping, outdoor design is a deliberate dialogue between crisp geometric craftsmanship and organic botanical vitality. From tailored turf conditioning to hand-dressed masonry, every square metre is curated as an enduring sanctuary.
           </p>
-<div class="flex items-center gap-6 border-t border-brand-border/80 pt-6">
-<a class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-brand-dark hover:text-brand-moss transition-colors" href="#contact">
-<span class="">More Info</span>
-<svg class="w-3.5 h-3.5 rotate-[-45deg]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</a>
-<span class="text-xs text-brand-dark/40 font-mono tracking-widest uppercase">AUSTRALIA WIDE</span>
-</div>
-</div>
-</article>
-<!-- Service Item 2: Landscape Installation -->
-<article class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-14 items-center mb-24 md:mb-32">
-<div class="lg:col-span-5 lg:pr-4">
-<span class="text-[11px] font-bold tracking-widest text-brand-moss uppercase mb-3 block">Landscape Installation</span>
-<h3 class="font-serif-luxury text-2xl sm:text-3xl text-brand-dark mb-4 leading-snug">
-            Bringing Your Vision to Life
-          </h3>
-<p class="text-sm md:text-base text-brand-dark/70 font-normal leading-relaxed mb-6">
-            From natural sandstone masonry and bespoke timber pergolas to structural grading and serene reflection ponds, our trade specialists execute with impeccable precision.
-          </p>
-<div class="flex items-center gap-6 border-t border-brand-border/80 pt-6">
-<a class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-brand-dark hover:text-brand-moss transition-colors" href="#contact">
-<span class="">More Info</span>
-<svg class="w-3.5 h-3.5 rotate-[-45deg]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</a>
-<span class="text-xs text-brand-dark/40 font-mono tracking-widest uppercase">MASTER CRAFTSMAN</span>
-</div>
-</div>
-<div class="lg:col-span-7">
-<div class="overflow-hidden rounded-2xl shadow-lg border border-brand-border/60 aspect-[16/10]">
-<img alt="Landscape installation with timber pergola, pool, and patio" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa0f1yzty-cfpZutmHQ5D5SL_-9yBX1gCAF4v9TMHNeQX6meIgCDU3bVhp2AlXwSDd3d5JTQZ5j1mbd_V9DU9-pQs46TNn-JXtDItoyt_mnA2nIgMVTw3YoApxfTQ5jDQH4_vmqEdnAhSIB3fk2SiNr1Axsn-LSRdxO6qDFg0fQyEZs7kWYIF9OQAQ0kIFdCRL2s2MPFoyEm0tp3rHwfiYTL5ivc_T7yrPZhvk_vMFBvI8qtynp8nkrg">
-</div>
-</div>
-</article>
-<!-- Service Item 3: Garden Maintenance -->
-<article class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-14 items-center mb-24 md:mb-32">
-<div class="lg:col-span-7 order-2 lg:order-1">
-<div class="overflow-hidden rounded-2xl shadow-lg border border-brand-border/60 aspect-[16/10]">
-<img alt="Master horticulturist curating Japanese-inspired Australian courtyard garden" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhZQe8OZjbLm8Jr_lGbUgm6H8ZjfyaO7Zm4tyutaPiic767HRvQi7xAlYEmj7FUyLFqoUyI38THzwZKIR9AXJd6CrK_KKkBfApoxCdjQydyPWIEj8Vs7CvuiB3pi4Rsd5yA199OQGwRrGk5JtTTGb83ZOdOMuT64Y9AL8WAE6t-StVlZXqcQDyTwCKqGnlRXzTncVxgwdaQv0JD4JMirYW-agiIpJQKnW4YZRminibIFOgEllm11S4fQ">
-</div>
-</div>
-<div class="lg:col-span-5 order-1 lg:order-2 lg:pl-4">
-<span class="text-[11px] font-bold tracking-widest text-brand-moss uppercase mb-3 block">Garden Maintenance &amp; Horticulture</span>
-<h3 class="font-serif-luxury text-2xl sm:text-3xl text-brand-dark mb-4 leading-snug">
-            Keeping Your Garden Vibrant Year-Round
-          </h3>
-<p class="text-sm md:text-base text-brand-dark/70 font-normal leading-relaxed mb-6">
-            A flourishing garden demands attentive horticultural care. We provide bespoke maintenance schedules, soil re-mineralization, pruning, lawn nourishment, and seasonal plant replenishment.
-          </p>
-<div class="flex items-center gap-6 border-t border-brand-border/80 pt-6">
-<a class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-brand-dark hover:text-brand-moss transition-colors" href="#contact">
-<span class="">More Info</span>
-<svg class="w-3.5 h-3.5 rotate-[-45deg]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</a>
-<span class="text-xs text-brand-dark/40 font-mono tracking-widest uppercase">SCHEDULED CARE</span>
-</div>
-</div>
-</article>
-<!-- Service Item 4: Sustainable Landscaping -->
-<article class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-14 items-center">
-<div class="lg:col-span-5 lg:pr-4">
-<span class="text-[11px] font-bold tracking-widest text-brand-moss uppercase mb-3 block">Sustainable Landscaping</span>
-<h3 class="font-serif-luxury text-2xl sm:text-3xl text-brand-dark mb-4 leading-snug">
-            Eco-Friendly Solutions for a Greener Future
-          </h3>
-<p class="text-sm md:text-base text-brand-dark/70 font-normal leading-relaxed mb-6">
-            Integrating drought-resilient native Australian botanicals, smart sub-surface irrigation systems, permeable paving, and biodiversity-supportive microclimates.
-          </p>
-<div class="flex items-center gap-6 border-t border-brand-border/80 pt-6">
-<a class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-brand-dark hover:text-brand-moss transition-colors" href="#contact">
-<span class="">More Info</span>
-<svg class="w-3.5 h-3.5 rotate-[-45deg]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</a>
-<span class="text-xs text-brand-dark/40 font-mono tracking-widest uppercase">ECOLOGICAL DESIGN</span>
-</div>
-</div>
-<div class="lg:col-span-7">
-<div class="overflow-hidden rounded-2xl shadow-lg border border-brand-border/60 aspect-[16/10]">
-<img alt="Modern Australian residential backyard landscape design with horizontal slat timber fence" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgedxddhMrRMbAfLOstaboLbsnRPTTgxFkUwME2oztlOPWPMmt_aXUSJEtF9Z-TMAmEgQOjhMNl1l36cCwsJugjk5VNzJnK-eUSRvO-_C8JQ9eD2Zvx9rH6lCZs5zRYlyj9iRKDtbqkX_ns5sEcbf_JXQ5LAbXOpWDB0eSBCQRvRq6tb5XU3apvMKJjoR7-SBjhGY33VTMRR3XJ-5XGXoaEnHYNFac3fKeGUs9Ot8L_Kjt8JqFeY_T1g">
-</div>
-</div>
-</article>
-</div>
-</section>
-<!-- END: ServicesSection -->
-<!-- BEGIN: BenefitsSection -->
-<section class="py-20 md:py-28 bg-white border-t border-brand-border/40" data-purpose="benefits-craft" id="about">
-<div class="max-w-7xl mx-auto px-6 sm:px-8">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-<!-- Left Column: Copy & Value Metrics -->
-<div class="lg:col-span-6">
-<span class="text-xs font-bold uppercase tracking-widest text-brand-moss block mb-3">Transform Your Garden</span>
-<h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl text-brand-dark tracking-tight leading-[1.15] mb-6">
-            Discover the benefits of professional landscaping
-          </h2>
-<p class="text-sm md:text-base text-brand-dark/75 font-normal leading-relaxed mb-10">
-            Investing in tailored landscape design elevates both your home’s aesthetic beauty and tangible market value. Experience a seamless balance of architectural geometry and flourishing natural life.
-          </p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 border-t border-brand-border/70 pt-8">
-<div>
-<span class="text-2xl font-serif-luxury font-bold text-brand-forest block mb-1">01</span>
-<h4 class="text-sm font-bold uppercase tracking-wider text-brand-dark mb-2">Increased Value</h4>
-<p class="text-xs md:text-sm text-brand-dark/65 leading-relaxed">
-                Strategic planting, stone paving, and functional outdoor zones deliver proven capital enhancement and street presence.
+<!-- Key Philosophical Differentiators -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
+<div class="p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant/20 shadow-sm flex flex-col gap-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">01 / Micro-Climate Curation</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Resilient Flora</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Strategic planting schedules favoring drought-tolerant perennials, micro-soil conditioning, and architectural canopies.
               </p>
 </div>
-<div>
-<span class="text-2xl font-serif-luxury font-bold text-brand-forest block mb-1">02</span>
-<h4 class="text-sm font-bold uppercase tracking-wider text-brand-dark mb-2">Aesthetic Appeal</h4>
-<p class="text-xs md:text-sm text-brand-dark/65 leading-relaxed">
-                Harmonious native textures and peaceful water features create a calming daily oasis for entertaining and relaxation.
+<div class="p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant/20 shadow-sm flex flex-col gap-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">02 / Structural Longevity</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Engineered Masonry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Sub-base grading, integrated water management channels, and hand-cut flagstone built to outlive seasons without subsidence.
               </p>
 </div>
 </div>
-<div class="mt-10">
-<a class="inline-flex items-center justify-center px-6 py-3 rounded-full text-xs font-bold tracking-wider uppercase border border-brand-dark text-brand-dark hover:bg-brand-dark hover:text-white transition-all" href="#contact">
-              About our team
-            </a>
+</div>
+<!-- Architectural Botanical Composition Card -->
+<div class="w-full lg:w-[460px] flex flex-col gap-6">
+<div class="relative rounded-3xl overflow-hidden shadow-xl bg-surface-container">
+<div class="aspect-[4/5] w-full relative">
+<img alt="Bespoke living botanical garden architecture detail" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvaWZRH1pl1WnMJITYcR_wEXS6cJPBP-Z8xBqiwt9vC2x44udeS0HQtno2RRPYKoy3k34eF1aYlbsIJJKNqAWu2K7dNk3BTF_Tfah-JxUImiXqTk3E2e23I6BKVOlA3hZSMPYOc8QOD1IiCBh2CwHuYpo6QD3N409kF2QG2mGE2DKJ4xN_ixY7SIuT2jQYzZjI-TLxROngtALw4gEtriSQOYZkJD8_G85ea0PrtJBb">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-surface-container-lowest/90 backdrop-blur-md border border-outline-variant/20">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Tonal Palette</p>
+<p class="font-body-sm text-body-sm text-primary font-medium">Acer Palmatum • Bluestone • Emerald Fescue</p>
 </div>
 </div>
-<!-- Right Column: Craftmanship Feature Visual -->
-<div class="lg:col-span-6">
-<div class="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-xl border border-brand-border/60 aspect-[4/3]">
-<img alt="Expert Australian landscaper meticulously laying natural sandstone pavers" class="w-full h-full object-cover" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbWYlZqZJj1YECtNEX9JHFHNpnW34Yafwk7rommYODjJTWTNO_3ZFHaNFJtdsoeSqBaxz8CotSa5KFBxFru44HhUXX07YWiP_37ewpURW6OlgNnOFXtJBF4PNkxoS_Gup0K--OgjyuTwvzIg3pbJ7C9euO17nb9UfKhTBUy2QPiy5leQi1m_Jy6kPUlvwdCkeogsbCGAuPbcH7B-sebBrPo-pL0mKyKu5VJXxhS55oPri8NT-XmBhVQA">
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- END: BenefitsSection -->
-<!-- BEGIN: PanoramicReviewSection -->
-<section class="relative py-24 md:py-36 bg-brand-forest text-white overflow-hidden" data-purpose="quote-banner" id="reviews">
-<!-- Background Image with Dark Vignette Overlay -->
-<div class="absolute inset-0 z-0 opacity-25">
-<img alt="Lush green garden backdrop" class="w-full h-full object-cover filter blur-[2px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-_wu7Zge7LXjbVVOO6YEL51HdIzoQdrRa2HfgT0wq6uUJ7_M2nkRx1wcp04pLui1m0VpvO-Hp-tGzyOsBSU6rG85VVYxnS1ndNV65YCe4HRUbd3mc-8-gjF7eEjBr-R0ZimHpCghEqwbvm84z-sipsAEzG6_jTtlZUyi165dx5Vp9N8r_kxCc4ZQd86K5OIQurwmoxtyuslWzSEuvZ9Y1W1bJrmjZTXh4bgGPJbC0gOXAS_C8s9QRQQ">
-</div>
-<div class="relative z-10 max-w-4xl mx-auto px-6 sm:px-8 text-center">
-<!-- Floating Glass Card -->
-<div class="bg-white/95 text-brand-dark rounded-3xl p-8 sm:p-14 shadow-2xl backdrop-blur-md border border-white/40">
-<!-- Star Rating -->
-<div aria-label="5 stars rating" class="flex justify-center gap-1.5 mb-6 text-amber-500">
-<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-</div>
-<blockquote class="font-serif-luxury text-2xl sm:text-3xl md:text-4xl text-brand-dark mb-6 leading-tight">
-          “Our outdoor space has never looked better.”
-        </blockquote>
-<p class="text-sm sm:text-base text-brand-dark/70 font-normal max-w-xl mx-auto mb-6">
-          “Creative Green Landscaping was knowledgeable, professional, and fully understood our aesthetic. From initial concept to sandstone installation, they handled every nuance seamlessly.”
-        </p>
-<div class="text-xs uppercase tracking-widest font-bold text-brand-forest">
-          James &amp; Claire Thornton — Adelaide Hills, SA
-        </div>
-</div>
-</div>
-</section>
-<!-- END: PanoramicReviewSection -->
-<!-- BEGIN: PortfolioSection -->
-<section class="py-20 md:py-32 bg-[#faf9f6]" data-purpose="portfolio-grid" id="work">
-<div class="max-w-7xl mx-auto px-6 sm:px-8">
-<div class="mb-14 md:mb-20">
-<span class="text-xs font-bold uppercase tracking-widest text-brand-moss block mb-3">Portfolio</span>
-<h2 class="font-serif-luxury text-3xl sm:text-4xl md:text-5xl text-brand-dark tracking-tight">
-          Related garden projects that inspire
-        </h2>
-</div>
-<!-- Editorial Projects Layout -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-<!-- Project 1 -->
-<div class="group">
-<div class="overflow-hidden rounded-2xl bg-brand-card shadow-sm border border-brand-border/60 aspect-[4/3] mb-4">
-<img alt="Woodland Coastal Estate" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5TNqnmUPohG5L6q1mpihruj4QnXVEsFeLeMGlegFaMDGMWz6zX0jlwQVSLHhWYmXOmbpxmcHdWLFGEN_K8ZJDKIuSiLxPVQWwXRVfTQWb0LA4qWfgWWdDh1fZWfgOOw9ge0xNSougtHTLZz8nbd-aOdjZ818dCCzYb20iQSybIxfWJslHrVefOy2JV3wNKpfdeNYgQ89Arx0w_gsz-GKhX4p8Z3gnBPNu8A6mB2i9u5KME6N7HYtCog">
-</div>
-<span class="text-[11px] font-bold tracking-widest text-brand-moss uppercase">A Natural Escape</span>
-<h3 class="font-serif-luxury text-xl text-brand-dark mt-1 mb-2 group-hover:text-brand-moss transition-colors">Woodland Coastal Retreat</h3>
-<p class="text-xs md:text-sm text-brand-dark/70">A project focused on restoring coastal native flora species in architectural rock beds.</p>
-</div>
-<!-- Project 2 -->
-<div class="group">
-<div class="overflow-hidden rounded-2xl bg-brand-card shadow-sm border border-brand-border/60 aspect-[4/3] mb-4">
-<img alt="Terraced Stone Pavilion" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsMp-6BOfE9w4gySDRi4z2gcPXHrg8d_ArECwqAqlyaLkOALnQDJjPbUz85ScV74nlwOdCtB8e7qM6h05cqaR2ReIGEFR_5e6WXzuTYF9_F6sEzCGAH1iHWZ9-WzSpRuKW7cJMrGFk7_taQYCHdFvjpXXYBZyt2tuPMyIS6QXMyjDZiOjHp1aZeGy6DLuHFlXKoN9PruNYb0KCB8V91x4iCWP4_Sj7UQD0TVnZHor0ctxMQfDaEqKLyw">
-</div>
-<span class="text-[11px] font-bold tracking-widest text-brand-moss uppercase">Classic Modern Courtyard</span>
-<h3 class="font-serif-luxury text-xl text-brand-dark mt-1 mb-2 group-hover:text-brand-moss transition-colors">Sandstone Manor</h3>
-<p class="text-xs md:text-sm text-brand-dark/70">Terraced garden beds, curated eucalyptus canopy, and warm timber entertaining patio.</p>
-</div>
-<!-- Project 3 -->
-<div class="group">
-<div class="overflow-hidden rounded-2xl bg-brand-card shadow-sm border border-brand-border/60 aspect-[4/3] mb-4">
-<img alt="Suburban Minimalist Sanctuary" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmZkK5uX4C51UnAqXybSpw7TqWqzJjSOn_UuJwpcecACr23i2JHCWOKXS6KIJi1kYJWexnLD9CYLT0UqmON_MURY-ZLab3hEy0WMCzbd3r4--KjUE1S3jZKX79gIyKEWaWSuSyIxRJ_Fyhzt_iFjv_EkfSLcUetjSArRlffztIhM-3T2vtKPaexegagigwFXM-uygeWE-4XmNSWoocZC9bB5txkOvblATfTBJLZIDovbbayTKCbc_D8A">
-</div>
-<span class="text-[11px] font-bold tracking-widest text-brand-moss uppercase">Suburban Zen</span>
-<h3 class="font-serif-luxury text-xl text-brand-dark mt-1 mb-2 group-hover:text-brand-moss transition-colors">Minimalist Pergola Haven</h3>
-<p class="text-xs md:text-sm text-brand-dark/70">Seamless indoor-outdoor living with cedar batten fencing, pool reflections, and bespoke lawn.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- END: PortfolioSection -->
-<!-- BEGIN: ProcessSection -->
-<section class="py-20 md:py-28 bg-white border-t border-brand-border/40" data-purpose="our-process" id="process">
-<div class="max-w-7xl mx-auto px-6 sm:px-8">
-<div class="text-center max-w-2xl mx-auto mb-16 md:mb-20">
-<span class="text-xs font-bold uppercase tracking-widest text-brand-moss block mb-3">Our Process</span>
-<h2 class="font-serif-luxury text-3xl sm:text-4xl text-brand-dark tracking-tight">
-          Turning your vision into a beautiful landscape
-        </h2>
-<p class="text-sm text-brand-dark/70 mt-4">
-          Our step-by-step process ensures your dream garden becomes a lasting, serene reality.
-        </p>
-</div>
-<!-- 4 Columns matching Sequoia Process Cards -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="p-8 rounded-2xl bg-brand-card border border-brand-border/50 flex flex-col justify-between hover:border-brand-moss/40 transition-colors">
-<div>
-<span class="font-serif-luxury text-4xl text-brand-forest/20 font-bold block mb-6">01</span>
-<h4 class="font-serif-luxury text-lg text-brand-dark mb-2">Consultation &amp; Vision</h4>
-<p class="text-xs text-brand-dark/70 leading-relaxed">
-              We visit your property to understand your aspirations, examine soil, sunlight exposure, and architectural synergy.
-            </p>
-</div>
-</div>
-<div class="p-8 rounded-2xl bg-brand-card border border-brand-border/50 flex flex-col justify-between hover:border-brand-moss/40 transition-colors">
-<div>
-<span class="font-serif-luxury text-4xl text-brand-forest/20 font-bold block mb-6">02</span>
-<h4 class="font-serif-luxury text-lg text-brand-dark mb-2">Design &amp; Ecology</h4>
-<p class="text-xs text-brand-dark/70 leading-relaxed">
-              Our architects craft a holistic plan with 3D elevations, bespoke plant palettes, and sustainable material specifications.
-            </p>
-</div>
-</div>
-<div class="p-8 rounded-2xl bg-brand-card border border-brand-border/50 flex flex-col justify-between hover:border-brand-moss/40 transition-colors">
-<div>
-<span class="font-serif-luxury text-4xl text-brand-forest/20 font-bold block mb-6">03</span>
-<h4 class="font-serif-luxury text-lg text-brand-dark mb-2">Precision Build</h4>
-<p class="text-xs text-brand-dark/70 leading-relaxed">
-              Master tradespeople oversee every detail—from stone pathways to timber framing, irrigation, and specimen planting.
-            </p>
-</div>
-</div>
-<div class="p-8 rounded-2xl bg-brand-card border border-brand-border/50 flex flex-col justify-between hover:border-brand-moss/40 transition-colors">
-<div>
-<span class="font-serif-luxury text-4xl text-brand-forest/20 font-bold block mb-6">04</span>
-<h4 class="font-serif-luxury text-lg text-brand-dark mb-2">Ongoing Curation</h4>
-<p class="text-xs text-brand-dark/70 leading-relaxed">
-              We offer bespoke seasonal maintenance packages to nurture your landscape as it matures and thrives over decades.
-            </p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- END: ProcessSection -->
-<!-- BEGIN: ContactSection -->
-<section class="py-20 md:py-32 bg-[#faf9f6] border-t border-brand-border/40" data-purpose="contact-and-map" id="contact">
-<div class="max-w-7xl mx-auto px-6 sm:px-8">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-<!-- Left: Form & Direct Contact -->
-<div class="lg:col-span-6">
-<span class="text-xs font-bold uppercase tracking-widest text-brand-moss block mb-3">Get in Touch</span>
-<h2 class="font-serif-luxury text-3xl sm:text-4xl text-brand-dark tracking-tight mb-4">
-            Ready to transform your outdoor space?
+<!-- SECTION 3: MASTER DISCIPLINES (#services) -->
+<section class="w-full py-24 bg-surface" id="services">
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col gap-16">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="flex flex-col gap-3 max-w-xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/30 w-fit">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Master Disciplines</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            Architectural craftsmanship, soil to stone.
           </h2>
-<p class="text-sm md:text-base text-brand-dark/70 mb-8">
-            Your dream garden is just a conversation away. Schedule a private site consultation with our landscape design team today.
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Each commission receives end-to-end stewardship from structural engineering and soil sciences to seasonal botanical upkeep.
+        </p>
+</div>
+<!-- 4 Minimal High-End Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Discipline 1 -->
+<div class="group p-8 rounded-3xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-300 flex flex-col justify-between min-h-[360px] border border-outline-variant/20">
+<div class="flex flex-col gap-6">
+<div class="w-14 h-14 rounded-2xl bg-surface-container group-hover:bg-primary-container text-primary group-hover:text-on-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[28px]">grass</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary group-hover:text-secondary-container">Discipline 01</span>
+<h3 class="font-headline-sm text-headline-sm group-hover:text-on-primary transition-colors">Architectural Turf Management</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-inverse-on-surface/80 transition-colors pt-6">
+            Precision mowing patterns, balanced soil microbial care, dethatching cycles, and emerald turf vitality tailored to seasonal light angles.
           </p>
-<!-- Contact Details Strip -->
-<div class="p-6 rounded-2xl bg-white border border-brand-border shadow-sm mb-8 space-y-4">
-<div class="flex items-center gap-4">
-<div class="w-10 h-10 rounded-full bg-brand-moss/10 flex items-center justify-center text-brand-moss flex-shrink-0">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
 </div>
+<!-- Discipline 2 -->
+<div class="group p-8 rounded-3xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-300 flex flex-col justify-between min-h-[360px] border border-outline-variant/20">
+<div class="flex flex-col gap-6">
+<div class="w-14 h-14 rounded-2xl bg-surface-container group-hover:bg-primary-container text-primary group-hover:text-on-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[28px]">park</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary group-hover:text-secondary-container">Discipline 02</span>
+<h3 class="font-headline-sm text-headline-sm group-hover:text-on-primary transition-colors">Bespoke Garden Architecture</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-inverse-on-surface/80 transition-colors pt-6">
+            Sculptural specimen tree placement, layered perennial flora palettes, and vibrant groundcover curation providing multi-season visual architecture.
+          </p>
+</div>
+<!-- Discipline 3 -->
+<div class="group p-8 rounded-3xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-300 flex flex-col justify-between min-h-[360px] border border-outline-variant/20">
+<div class="flex flex-col gap-6">
+<div class="w-14 h-14 rounded-2xl bg-surface-container group-hover:bg-primary-container text-primary group-hover:text-on-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[28px]">handyman</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary group-hover:text-secondary-container">Discipline 03</span>
+<h3 class="font-headline-sm text-headline-sm group-hover:text-on-primary transition-colors">Masonry &amp; Stone Retaining</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-inverse-on-surface/80 transition-colors pt-6">
+            Hand-dressed flagstone walkways, structural limestone terraces, seamless retaining tiers, and permeable drainage integration.
+          </p>
+</div>
+<!-- Discipline 4 -->
+<div class="group p-8 rounded-3xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-300 flex flex-col justify-between min-h-[360px] border border-outline-variant/20">
+<div class="flex flex-col gap-6">
+<div class="w-14 h-14 rounded-2xl bg-surface-container group-hover:bg-primary-container text-primary group-hover:text-on-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[28px]">light_mode</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary group-hover:text-secondary-container">Discipline 04</span>
+<h3 class="font-headline-sm text-headline-sm group-hover:text-on-primary transition-colors">Illumination &amp; Water Elements</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-inverse-on-surface/80 transition-colors pt-6">
+            Concealed warm 2700K night illumination fixtures, reflective formal pools, soothing sheer descents, and silent filtration systems.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: CURATED FOLIO SHOWCASE (#showcase) -->
+<section class="w-full py-24 bg-primary text-on-primary" id="showcase">
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col gap-16">
+<!-- Section Title -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-primary-container/60 pb-8">
+<div class="flex flex-col gap-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container border border-outline-variant/20 w-fit">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-container">Selected Archive</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary tracking-tight">
+            Curated Works &amp; Master Commissions
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container max-w-sm">
+          A glimpse into residences transformed through structural landscaping and botanical balance.
+        </p>
+</div>
+<!-- Portfolio Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Large Featured Project -->
+<div class="lg:col-span-8 flex flex-col rounded-3xl overflow-hidden bg-primary-container/40 border border-outline-variant/15 group">
+<div class="relative aspect-[16/10] w-full overflow-hidden">
+<img alt="High-end bespoke residential landscape architecture showcase, Belmont Private Grounds" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6_RjKoQMQYOiUMCQlcZRx1V3fRDYefheaaseoy2yA8OBQKc99ZmEkvsU9ESmi8jmce7q1k1JFWLUXVggue_Mzgf9Y8V_Frg6earRH_I3GhMoHRWAlWQ4_hE8RO09dq_iZU2PRz6pM79udVxZzWNozYag-XbX8lYSWg3MQhkRBiXL1MpWX_hoHASd3rRRHAy64pGdieJlVrZqzzTMkOIjeDhaxOXsMWYUZKzJ5N5QC">
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-6 left-6 px-3.5 py-1.5 rounded-full bg-primary/80 backdrop-blur-md border border-outline-variant/20 font-label-sm text-label-sm tracking-widest uppercase text-secondary-container">
+              Primary Estate
+            </div>
+</div>
+<div class="p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-md text-headline-md text-on-primary">Belmont Private Grounds</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container">Architectural Turf Striping • Drought-Hardy Specimen Perennials • Custom Stonework</p>
+</div>
+<div class="flex-shrink-0">
+<span class="font-label-md text-label-md px-4 py-2 rounded-xl bg-primary-container text-on-primary border border-outline-variant/20">2.4 Acres</span>
+</div>
+</div>
+</div>
+<!-- Secondary Highlights Column -->
+<div class="lg:col-span-4 flex flex-col gap-8">
+<!-- Small Project 1 -->
+<div class="flex-1 flex flex-col rounded-3xl overflow-hidden bg-primary-container/40 border border-outline-variant/15 group">
+<div class="relative aspect-[16/9] w-full overflow-hidden">
+<img alt="Highland Courtyard sculptural maple and cantilevered stone stairs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh-VtjSFKD_yymozzH4JrO96xQ99sBbZ3rA7p9ZZK8z5Z0_MhRs-uAs4hWdnOw2O50TTF-q9vX3dFRNmR8b9lnf7IlcB-3V1h0hfQyyBspkn4F3EmC4Z1fKq3FxWl-6u1weTSjUaoize7CvjM6nnDAhnoG5xHRVEDaIp2od4SXqZCvfAY_vRnH-rBwGnuiUlK0lxxrrPFchFa3RjkeQ4NX3MugaiwCA0j7XBsuxULe">
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-70"></div>
+</div>
+<div class="p-6 flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container">Residence Folio</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary">Highland Courtyard</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container">Sculptural Japanese Maples, Floating Granite Steps, Ambient Concealed Uplighting</p>
+</div>
+</div>
+<!-- Small Project 2 -->
+<div class="flex-1 flex flex-col rounded-3xl overflow-hidden bg-primary-container/40 border border-outline-variant/15 group">
+<div class="relative aspect-[16/9] w-full overflow-hidden">
+<img alt="Meadowview Terraces travertine outdoor terracing and reflection pool" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsqjxnZvMeeOxFQELTonTo_wVUP82LCv-xSAFTFvoUD_1Puc4-6bosU2YWsefKJCG8YkU6TwORz2NNTwDJNNPyRPBgEl1fyS1DbCHs51IJwUGNvrGZ7XQsjTKoteE-jUNCD7NS9e7oJvxCk1KyJazBR4PXhphupbCTuIGnJn3Pw2Z34U8kDvIR_CTCtTTGciswfGTL3QRtzdayNms0y2c4zRm0aCmqdb4KkYoODGrm">
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-70"></div>
+</div>
+<div class="p-6 flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container">Water &amp; Stone</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary">Meadowview Terraces</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container">Travertine Pavers, Formal Koi Reflection Pool, Integrated Sheer Descents</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: CLIENT TESTIMONIALS (#reviews) -->
+<section class="w-full py-24 bg-surface-container-low" id="reviews">
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col gap-16">
+<!-- Header with Google Verified 5.0 Rating -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
+<div class="flex flex-col gap-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest border border-outline-variant/30 w-fit">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Reputation</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            Client Voices &amp; Accolades
+          </h2>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/25 shadow-sm">
+<div class="flex text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">5.0 Star Rating</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">48+ Verified Google Reviews</span>
+</div>
+</div>
+</div>
+<!-- Testimonials Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="p-8 rounded-3xl bg-surface-container-lowest border border-outline-variant/25 shadow-sm flex flex-col justify-between gap-6">
+<div class="flex flex-col gap-4">
+<div class="flex text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              “Creative Green transformed our multi-tiered slope into a breathtaking living terrace. The precision of their masonry and their botanical suggestions completely elevated our entire home.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-outline-variant/15">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-label-md text-label-md text-primary font-bold">
+              AM
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Arthur &amp; Claire Vance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Belmont Hills Estate</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-8 rounded-3xl bg-surface-container-lowest border border-outline-variant/25 shadow-sm flex flex-col justify-between gap-6">
+<div class="flex flex-col gap-4">
+<div class="flex text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              “Their turf management discipline is unmatched. We had struggling grass for years; their agronomist balanced the soil chemistry, and the lawn now looks like an immaculate golf green.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-outline-variant/15">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-label-md text-label-md text-primary font-bold">
+              EW
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Dr. Eleanor West</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oakridge Valley</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-8 rounded-3xl bg-surface-container-lowest border border-outline-variant/25 shadow-sm flex flex-col justify-between gap-6">
+<div class="flex flex-col gap-4">
+<div class="flex text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              “From architectural design sketches to planting mature spec trees, the crew was impeccably clean, respectful of our property, and delivered ahead of schedule. Outstanding communication.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-outline-variant/15">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-label-md text-label-md text-primary font-bold">
+              RT
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Richard Thorne</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Highland Manor</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: CONSULTATION & CONTACT (#contact) -->
+<section class="w-full py-24 bg-surface" id="contact">
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col gap-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Details & Territory Card -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<div class="flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/30 w-fit">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Direct Inquiries</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+              Begin Your Grounds Transformation
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              We welcome commissions for residential master plans, tailored renovations, and multi-year horticultural stewardship.
+            </p>
+</div>
+<!-- Studio Specifics -->
+<div class="flex flex-col gap-4 p-8 rounded-3xl bg-surface-container-low border border-outline-variant/25">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-[24px]">call</span>
 <div>
-<div class="text-[11px] uppercase tracking-wider text-brand-dark/50 font-bold">Direct Phone Line</div>
-<a class="text-base font-bold text-brand-dark hover:text-brand-moss transition-colors" href="tel:+61406302649">
-                  +61 406 302 649
-                </a>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Direct Line</p>
+<a class="font-headline-sm text-headline-sm text-primary hover:text-secondary transition-colors" href="tel:8004927105">(800) 492-7105</a>
 </div>
 </div>
-<div class="flex items-center gap-4 border-t border-brand-border/60 pt-4">
-<div class="w-10 h-10 rounded-full bg-brand-moss/10 flex items-center justify-center text-brand-moss flex-shrink-0">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-<path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
+<div class="flex items-start gap-4 pt-4 border-t border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-[24px]">schedule</span>
 <div>
-<div class="text-[11px] uppercase tracking-wider text-brand-dark/50 font-bold">Verified Google Business Profile</div>
-<a class="text-sm font-semibold text-brand-forest hover:underline" href="https://maps.app.goo.gl/G1XNceWGTZc9qA2Q9" rel="noopener noreferrer" target="_blank">
-                  Creative Green Landscaping on Google Maps →
-                </a>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Studio Hours</p>
+<p class="font-body-md text-body-md text-primary font-medium">Mon – Fri: 7:30 AM – 5:30 PM</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Saturday: By Private Appointment</p>
 </div>
 </div>
-</div>
-<!-- Booking Form -->
-<form class="space-y-4" id="consultation-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out to Creative Green Landscaping. We will contact you promptly to schedule your consultation.');">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex items-start gap-4 pt-4 border-t border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-[24px]">explore</span>
 <div>
-<label class="block text-xs uppercase font-bold text-brand-dark/70 tracking-wider mb-1" for="fullName">Full Name</label>
-<input class="w-full rounded-xl border-brand-border bg-white text-sm focus:border-brand-moss focus:ring-brand-moss py-2.5 px-3.5" id="fullName" placeholder="e.g. Sarah Mitchell" required="" type="text">
-</div>
-<div>
-<label class="block text-xs uppercase font-bold text-brand-dark/70 tracking-wider mb-1" for="phone">Phone Number</label>
-<input class="w-full rounded-xl border-brand-border bg-white text-sm focus:border-brand-moss focus:ring-brand-moss py-2.5 px-3.5" id="phone" placeholder="e.g. 0400 123 456" required="" type="tel">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Service Territory</p>
+<p class="font-body-sm text-body-sm text-primary font-medium">Exclusive 40-Mile Regional Radius • Estate Commissions</p>
 </div>
 </div>
-<div>
-<label class="block text-xs uppercase font-bold text-brand-dark/70 tracking-wider mb-1" for="email">Email Address</label>
-<input class="w-full rounded-xl border-brand-border bg-white text-sm focus:border-brand-moss focus:ring-brand-moss py-2.5 px-3.5" id="email" placeholder="sarah@example.com.au" required="" type="email">
 </div>
-<div>
-<label class="block text-xs uppercase font-bold text-brand-dark/70 tracking-wider mb-1" for="serviceType">Service Required</label>
-<select class="w-full rounded-xl border-brand-border bg-white text-sm focus:border-brand-moss focus:ring-brand-moss py-2.5 px-3.5" id="serviceType">
-<option value="custom-design">Custom Garden &amp; Landscape Design</option>
-<option value="installation">Landscape Installation &amp; Stonework</option>
-<option value="maintenance">Ongoing Garden Care &amp; Horticulture</option>
-<option value="sustainable">Sustainable / Native Re-Wilding</option>
+<!-- Territory Map Element -->
+<div class="w-full h-56 rounded-3xl bg-surface-container-high overflow-hidden shadow-sm relative flex items-end p-4" data-location="Los Angeles, CA">
+<div class="px-4 py-2 rounded-xl bg-surface-container-lowest/90 backdrop-blur-md border border-outline-variant/20 shadow-md">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Active Commission Territory</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Consultation Request Form -->
+<div class="lg:col-span-7 p-8 md:p-12 rounded-3xl bg-surface-container-lowest border border-outline-variant/25 shadow-xl">
+<form class="flex flex-col gap-6" id="consultation-form" onsubmit="event.preventDefault(); alert('Thank you. A landscape architect will contact you within 24 hours to schedule your on-site evaluation.');">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-md text-headline-md text-primary">Request an On-Site Consultation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Complete the details below for an architectural site walkthrough and evaluation.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+<!-- Full Name -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-primary" for="name">Full Name *</label>
+<input class="h-[52px] px-4 rounded-xl bg-surface-container-low border border-outline-variant/40 text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-secondary/30 transition-all font-body-md text-body-md" id="name" placeholder="Lord Arthur Vance" required="" type="text">
+</div>
+<!-- Phone -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-primary" for="phone">Phone Number *</label>
+<input class="h-[52px] px-4 rounded-xl bg-surface-container-low border border-outline-variant/40 text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-secondary/30 transition-all font-body-md text-body-md" id="phone" placeholder="(800) 000-0000" required="" type="tel">
+</div>
+</div>
+<!-- Address -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-primary" for="address">Property Address / Estate Location *</label>
+<input class="h-[52px] px-4 rounded-xl bg-surface-container-low border border-outline-variant/40 text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-secondary/30 transition-all font-body-md text-body-md" id="address" placeholder="742 Evergreen Terrace, Estate Grounds" required="" type="text">
+</div>
+<!-- Primary Discipline Select -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-primary" for="service-type">Primary Discipline Required</label>
+<select class="h-[52px] px-4 rounded-xl bg-surface-container-low border border-outline-variant/40 text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-secondary/30 transition-all font-body-md text-body-md" id="service-type">
+<option value="complete">Complete Estate Master Architecture (Full Grounds)</option>
+<option value="turf">Architectural Turf &amp; Soil Conditioning</option>
+<option value="masonry">Stone Retaining, Terraces &amp; Flagstone Paving</option>
+<option value="illumination">Night Illumination &amp; Reflective Water Pools</option>
+<option value="perennial">Bespoke Specimen Planting &amp; Flora Palettes</option>
 </select>
 </div>
-<div>
-<label class="block text-xs uppercase font-bold text-brand-dark/70 tracking-wider mb-1" for="message">Project Details</label>
-<textarea class="w-full rounded-xl border-brand-border bg-white text-sm focus:border-brand-moss focus:ring-brand-moss py-2.5 px-3.5" id="message" placeholder="Tell us about your property and envisioned outdoor space..." rows="4"></textarea>
+<!-- Scope Details Textarea -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-primary" for="scope">Project Scope &amp; Vision</label>
+<textarea class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/40 text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-secondary/30 transition-all font-body-md text-body-md resize-none" id="scope" placeholder="Briefly describe your property size, existing state, and botanical objectives..." rows="4"></textarea>
 </div>
-<button class="w-full py-3.5 px-6 rounded-xl bg-brand-dark text-white font-semibold text-xs uppercase tracking-widest hover:bg-brand-forest transition-colors shadow-md" type="submit">
-              Submit Consultation Request
-            </button>
+<!-- Submit Button -->
+<button class="w-full mt-2 h-14 rounded-2xl bg-secondary-container text-on-secondary-container font-label-lg text-label-lg uppercase tracking-wider hover:brightness-105 transition-all shadow-md flex items-center justify-center gap-2" type="submit">
+<span class="">Request Consultation</span>
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</button>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center">
+              We respect your privacy. All property walkthroughs and structural schematics remain strictly confidential.
+            </p>
 </form>
-</div>
-<!-- Right: Interactive Google Maps Card Preview -->
-<div class="lg:col-span-6 flex flex-col">
-<div class="h-full rounded-3xl overflow-hidden border border-brand-border bg-white shadow-lg flex flex-col">
-<!-- Map Card Header -->
-<div class="p-6 bg-brand-dark text-white flex items-center justify-between">
-<div>
-<span class="text-[11px] font-mono tracking-widest text-brand-lime uppercase block">Australian Landscape Designer</span>
-<h4 class="font-serif-luxury text-xl font-semibold">Creative Green Landscaping</h4>
-</div>
-<a class="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-xs font-semibold tracking-wider text-white transition-colors" href="https://maps.app.goo.gl/G1XNceWGTZc9qA2Q9" rel="noopener noreferrer" target="_blank">
-                Open Google Maps
-              </a>
-</div>
-<!-- Stylized Map Widget Frame -->
-<div class="relative flex-grow min-h-[380px] w-full bg-neutral-100">
-<iframe allowfullscreen="" class="absolute inset-0 w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418706.74567215264!2d138.32832961559982!3d-34.92849890000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0c92edd028e1d%3A0x9599508906385f!2sAdelaide%20SA%2C%20Australia!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau" title="Creative Green Landscaping Google Map Location"></iframe>
-</div>
-<!-- Location Badge Info -->
-<div class="p-6 bg-brand-card border-t border-brand-border/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-<div>
-<div class="text-xs font-bold text-brand-dark">Service Region</div>
-<div class="text-xs text-brand-dark/70">Metropolitan, Coastal &amp; Regional Estates</div>
-</div>
-<a class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-forest hover:text-brand-moss" href="https://maps.app.goo.gl/G1XNceWGTZc9qA2Q9" rel="noopener noreferrer" target="_blank">
-<span class="">Read verified client reviews</span>
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</a>
-</div>
-</div>
 </div>
 </div>
 </div>
 </section>
-<!-- END: ContactSection -->
-<!-- BEGIN: MainFooter -->
-<footer class="bg-brand-dark text-white/80 py-16 border-t border-white/10" data-purpose="site-footer">
-<div class="max-w-7xl mx-auto px-6 sm:px-8">
-<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-12 border-b border-white/10">
-<!-- Logo -->
-<a aria-label="Creative Green Landscaping Home" class="focus:outline-none" href="#hero">
-<img alt="Creative Green Landscaping Footer Logo" class="h-9 w-auto object-contain" src="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 460 80' fill='none'&gt;&lt;g&gt;&lt;rect x='8' y='10' width='60' height='60' rx='16' fill='%23faf9f6'/&gt;&lt;path d='M38 18C38 18 52 26 52 42C52 51 46 58 38 60C30 58 24 51 24 42C24 26 38 18 38 18Z' fill='%23a3e635' fill-opacity='0.95'/&gt;&lt;path d='M38 22V56M30 38L38 46L46 38' stroke='%23132a21' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/&gt;&lt;circle cx='50' cy='20' r='4.5' fill='%23f59e0b'/&gt;&lt;/g&gt;&lt;text x='82' y='38' font-family='sans-serif' font-size='21' font-weight='900' letter-spacing='-0.5' fill='%23ffffff'&gt;CREATIVE GREEN&lt;/text&gt;&lt;text x='82' y='56' font-family='sans-serif' font-size='11' font-weight='700' letter-spacing='2.6' fill='%23a3e635'&gt;LANDSCAPING • LANDSCAPE DESIGNER&lt;/text&gt;&lt;/svg&gt;">
-</a>
-<!-- Footer Navigation -->
-<nav class="flex flex-wrap gap-6 sm:gap-8 text-xs font-semibold uppercase tracking-wider text-white/70">
-<a class="hover:text-white transition-colors" href="#about">About</a>
-<a class="hover:text-white transition-colors" href="#services">Services</a>
-<a class="hover:text-white transition-colors" href="#work">Work</a>
-<a class="hover:text-white transition-colors" href="#process">Process</a>
-<a class="hover:text-white transition-colors" href="#contact">Contact</a>
-<a class="hover:text-white transition-colors" href="https://maps.app.goo.gl/G1XNceWGTZc9qA2Q9" rel="noopener noreferrer" target="_blank">Google Profile</a>
-</nav>
-</div>
-<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
-<p class="">© 2026 Creative Green Landscaping. All rights reserved. Licensed Australian Landscape Designer.</p>
-<p class="font-mono text-[11px] tracking-wide">DIRECT: +61 406 302 649 • ARCHITECTURAL GARDENS • NATIVE BOTANICALS</p>
-</div>
-</div>
-</footer>
-<!-- END: MainFooter -->
-<!-- BEGIN: InteractiveScripts -->
-<script data-purpose="scroll-and-parallax">
-    document.addEventListener('DOMContentLoaded', () => {
-      const nav = document.getElementById('top-nav');
-      const heroBg = document.getElementById('hero-bg');
-
-      // Scroll Event Listener for Sticky Condensation and Parallax
-      window.addEventListener('scroll', () => {
-        const scrollPos = window.scrollY;
-
-        // Shrink and blur navbar upon scroll
-        if (scrollPos > 30) {
-          nav.classList.add('scrolled');
-        } else {
-          nav.classList.remove('scrolled');
-        }
-
-        // Subtle hero image parallax
-        if (heroBg && scrollPos < 900) {
-          heroBg.style.transform = `scale(1.05) translateY(${scrollPos * 0.08}px)`;
-        }
-      }, { passive: true });
-
-      // Smooth scroll offset handling for header height
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          const targetId = this.getAttribute('href');
-          if (targetId === '#') return;
-          
-          const targetEl = document.querySelector(targetId);
-          if (targetEl) {
-            e.preventDefault();
-            const headerOffset = 80;
-            const elementPosition = targetEl.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-            window.scrollTo({
-              top: offsetPosition,
-              behavior: 'smooth'
-            });
-          }
-        });
-      });
-    });
-  </script>
-<!-- END: InteractiveScripts -->
-
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/20 py-space-xl mt-space-xl"><div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-3"><img alt="Creative Green Landscaping Logo" class="h-7 w-auto object-contain opacity-90" src="https://lh3.googleusercontent.com/aida/AEtjO1WizdP8SfdTvZ1lSYPdZxHZgdVe2-Y10MxFiyOuQSgaFur4iqG8Bu-OJJQTdaCV-E4gpIHEMY53Sotk-Y3dcwF09BxCrHRHKY-JMsVQFfUeeF-acCv4c99Kvx5n4ccizIzIoUkUhn9yKZDXKz5V3FP0SGuGM6yOlEnQUu-TadcnCx-B8xFCMhKiaONTG3rTU59nLkic1Zd6O79tE-InjeoCBHAKfZDkutA1Sz9RBsejdw"><span class="font-label-lg text-label-lg text-primary tracking-wide">Creative Green Landscaping</span></div><p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">© 2024 Creative Green Landscaping Architecture &amp; Craft. All rights reserved.</p><div class="flex items-center gap-space-md"><a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#overview">Top</a><a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#contact">Consultation</a><a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy</a></div></div></footer><script>(function(){const bar=document.getElementById('scroll-progress-bar');const header=document.getElementById('floating-header');let lastY=window.scrollY;window.addEventListener('scroll',()=>{const currY=window.scrollY;const max=document.documentElement.scrollHeight-window.innerHeight;if(bar&&max>0){bar.style.width=(currY/max*100)+'%';}if(header){if(currY>lastY&&currY>80){header.style.transform='translateY(-120%)';}else{header.style.transform='translateY(0)';}}lastY=currY;},{passive:true});})();</script>
 
 </body></html>
